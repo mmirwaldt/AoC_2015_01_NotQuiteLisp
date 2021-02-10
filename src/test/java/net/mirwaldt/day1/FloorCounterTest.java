@@ -10,9 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FloorCounterTest {
     private final static FloorCounter streamFloorCounter = new StreamFloorCounter();
+    private final static FloorCounter recursionFloorCounter = new RecursionFloorCounter();
 
     private static Stream<Arguments> floorCounter() {
-        return Stream.of(Arguments.of(streamFloorCounter));
+        return Stream.of(Arguments.of(streamFloorCounter),
+                Arguments.of(recursionFloorCounter));
     }
 
     @ParameterizedTest
