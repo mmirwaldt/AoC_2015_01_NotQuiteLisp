@@ -9,10 +9,12 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BasementFinderTest {
-    private final static BasementFinder basementFinder = new LoopBasementFinder();
+    private final static BasementFinder loopBasementFinder = new LoopBasementFinder();
+    private final static BasementFinder recursionBasementFinder = new RecursionBasementFinder();
 
     private static Stream<Arguments> basementFinder() {
-        return Stream.of(Arguments.of(basementFinder));
+        return Stream.of(Arguments.of(loopBasementFinder),
+                Arguments.of(recursionBasementFinder));
     }
 
     @ParameterizedTest
