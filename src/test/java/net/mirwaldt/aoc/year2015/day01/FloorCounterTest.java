@@ -1,5 +1,8 @@
-package net.mirwaldt.day1;
+package net.mirwaldt.aoc.year2015.day01;
 
+import net.mirwaldt.aoc.year2015.day01.FloorCounter;
+import net.mirwaldt.aoc.year2015.day01.RecursionFloorCounter;
+import net.mirwaldt.aoc.year2015.day01.StreamFloorCounter;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;

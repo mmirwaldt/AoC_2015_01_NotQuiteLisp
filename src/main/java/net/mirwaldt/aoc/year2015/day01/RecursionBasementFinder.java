@@ -1,4 +1,4 @@
-package net.mirwaldt.day1;
+package net.mirwaldt.aoc.year2015.day01;
 
 public class RecursionBasementFinder implements BasementFinder {
     public static final int BASEMENT_FLOOR = -1;

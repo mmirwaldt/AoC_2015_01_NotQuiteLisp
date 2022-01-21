@@ -1,4 +1,4 @@
-package net.mirwaldt.day1;
+package net.mirwaldt.aoc.year2015.day01;
 
 public class StreamFloorCounter implements FloorCounter {
     @Override
